@@ -15,3 +15,7 @@ exercises.
 
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+- the worst case complexity is when we have to search for a path at every node and never find a path (i.e. there are no cycles). This means we will have to search $V$ times and call the search function whose time complexity is $O(V + E)
+
+- therefore, our worst cases time complexity of this algorithm is $O(V * (V + E))$ which simplifies to $O(V^2 + (V * E))
